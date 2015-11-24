@@ -1,8 +1,3 @@
-" set terminal to 256 colors
-set t_Co=256
-
-colorscheme vim-atom-dark/colors/atom-dark
-
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -20,6 +15,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+
+Bundle 'altercation/vim-colors-solarized'
 
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-abolish'
@@ -87,4 +84,11 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+" Color Scheme
+syntax enable
+set background=dark
+let g:solarized_termcolors=256
+let g:solarized_visibility="high"
+let g:solarized_contrast="high"
+colorscheme solarized
 
